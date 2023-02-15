@@ -26,7 +26,7 @@ const avaliableWeekDays = [
 ];
 
 export function NewHabit() {
-  const [title, setTitle] = useState('')
+  const [title, setTitle] = useState("");
   const [weekDays, setWeekDays] = useState<number[]>([]);
 
   function handleToggleWeekDay(weekDayIndex: number) {
@@ -40,28 +40,31 @@ export function NewHabit() {
   }
 
   async function handleCreateNewHabit() {
-    try{
-      if(!title.trim() || weekDays.length === 0){
-        Alert.alert('Novo Hábito', 'Informe o nome do hábito e escolha a periodicidade.')
+    try {
+      if (!title.trim() || weekDays.length === 0) {
+        Alert.alert(
+          "Novo Hábito",
+          "Informe o nome do hábito e escolha a periodicidade."
+        );
       }
 
-      await api.post('/habits', { title, weekDays })
+      await api.post("/habits", { title, weekDays });
 
-      setTitle('')
-      setWeekDays([])
+      setTitle("");
+      setWeekDays([]);
 
-      Alert.alert('Novo hábito', 'Hábito criado com sucesso!')
-    }catch(error){
-      console.log(error)
-      Alert.alert('Ops', 'Não possível criar um novo hábito')
+      Alert.alert("Novo hábito", "Hábito criado com sucesso!");
+    } catch (error) {
+      console.log(error);
+      Alert.alert("Ops", "Não possível criar um novo hábito");
     }
   }
 
   return (
     <View className="flex-1 bg-backgroundColor px-8 pt-16">
-      <ScrollView 
-      showsVerticalScrollIndicator={false}
-      contentContainerStyle={{ paddingBottom: 100 }}
+      <ScrollView
+        showsVerticalScrollIndicator={false}
+        contentContainerStyle={{ paddingBottom: 100 }}
       >
         <BackButton />
 
@@ -73,12 +76,12 @@ export function NewHabit() {
           Qual o seu comprometimento?
         </Text>
 
-        <TextInput 
-        className="h-12 pl-4 rounded-lg mt-3 bg-zinc-900 text-white border-2 border-zinc-800 focus:border-green-600" 
-        placeholder="ex.: Exercícios, dormir bem, etc..."
-        placeholderTextColor={colors.zinc[400]}
-        onChangeText={setTitle}
-        value={title}
+        <TextInput
+          className="h-12 pl-4 rounded-lg mt-3 bg-zinc-900 text-white border-2 border-zinc-800 focus:border-green-600"
+          placeholder="ex.: Exercícios, dormir bem, etc..."
+          placeholderTextColor={colors.zinc[400]}
+          onChangeText={setTitle}
+          value={title}
         />
 
         <Text className="text-white text-base font-semibold mt-4 mb-3">
@@ -94,10 +97,10 @@ export function NewHabit() {
           />
         ))}
 
-        <TouchableOpacity 
-        className="w-full h-14 flex-row items-center justify-center bg-green-600 rounded-md mt-6"
-        activeOpacity={0.7}
-        onPress={handleCreateNewHabit}
+        <TouchableOpacity
+          className="w-full h-14 flex-row items-center justify-center bg-green-600 rounded-md mt-6"
+          activeOpacity={0.7}
+          onPress={handleCreateNewHabit}
         >
           <Feather name="check" size={20} color={colors.white} />
 
