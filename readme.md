@@ -36,8 +36,19 @@ src
 
 - Caso você não saiba qual o seu ip local, basta executar!
 
-```bash
+```shell
 ipconfig
+
+# Retorno
+Configuração de IP do Windows
+
+Adaptador Ethernet Ethernet:
+
+   Sufixo DNS específico de conexão. . . . . . :
+   Endereço IPv6 de link local . . . . . . . . : -------
+   Endereço IPv4. . . . . . . .  . . . . . . . : SEU IP
+   Máscara de Sub-rede . . . . . . . . . . . . : -------
+   Gateway Padrão. . . . . . . . . . . . . . . : -------
 ```
 
 ### :no_entry: Atenção!
@@ -49,6 +60,21 @@ ipconfig
 ### :computer: WSL2
 
 - Para usuarios do WSL infelizmente fica um pouco mais complicado, para isso recomendo da uma lida nesse post no [medium](https://medium.com/@nailsonisrael/rodando-react-native-expo-no-wsl2-5b3f501c1c2a).
+
+### :ballot_box_with_check: Start
+
+- Após configurado o ambiente, pode executar
+
+```node
+# Iniciando Projeto!
+npm start
+```
+
+- Se tudo estiver correto deve aparecer algo assim para você!
+- Apenas leia o QRCODE.
+- Você precisa ter o Expo GO intalado no seu SmartPhone!
+
+[![Screenshot-1.jpg](https://i.postimg.cc/VvchV8MF/Screenshot-1.jpg)](https://postimg.cc/KkJQ1C0K)
 
 ### 🛠 Tecnologias
 
