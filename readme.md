@@ -40,12 +40,20 @@ src
 ipconfig
 ```
 
-### Atenção!
+### :no_entry: Atenção!
 
 - Lembre-se de apontar para porta `:3333`
 
 [![axios-base-Url.png](https://i.postimg.cc/PxtM05JK/axios-base-Url.png)](https://postimg.cc/Ty4mDGrW)
 
-### WSL2
+### :computer: WSL2
 
 - Para usuarios do WSL infelizmente fica um pouco mais complicado, para isso recomendo da uma lida nesse post no [medium](https://medium.com/@nailsonisrael/rodando-react-native-expo-no-wsl2-5b3f501c1c2a).
+
+### 🛠 Tecnologias
+
+As seguintes ferramentas foram usadas na construção do projeto:
+
+- [TypeScript](https://www.typescriptlang.org/)
+- [Node.js](https://nodejs.org/en/)
+- [Expo](https://www.prisma.io/)
