@@ -1,12 +1,14 @@
 [![Cover.png](https://i.postimg.cc/brVcT7Nj/Cover.png)](https://postimg.cc/1VFjRYqW)
 
-### ⚠️ Pré-requisitos
+### :warning: Pré-requisitos
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
 [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/), [Expo](https://expo.dev/).
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/).
 
-### :white_check_mark: Getting Started
+:warning: Precisa ter o [API](https://github.com/JRebertt/habit-api.git) rodando na maquina
+
+### :iphone: Rodando o Mobile
 
 ```bash
 # Clone este repositório
@@ -82,4 +84,4 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 - [TypeScript](https://www.typescriptlang.org/)
 - [Node.js](https://nodejs.org/en/)
-- [Expo](https://www.prisma.io/)
+- [Expo](https://expo.dev/)
