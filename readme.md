@@ -65,7 +65,7 @@ Adaptador Ethernet Ethernet:
 
 - Após configurado o ambiente, pode executar
 
-```node
+```bash
 # Iniciando Projeto!
 npm start
 ```
